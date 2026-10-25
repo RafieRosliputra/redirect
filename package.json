@@ -1,0 +1,14 @@
+{
+  "name": "johorstudio-redirect",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "JohorStudio custom subdomain redirects, protected by Cloudflare Access.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node app/server.mjs",
+    "test": "node --test app/tests/*.test.mjs"
+  }
+}

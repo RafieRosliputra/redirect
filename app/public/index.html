@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f5f7f7">
+  <title>Pautan · JohorStudio</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="preload" href="/assets/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/styles.css?v=20261026">
+  <script src="/assets/app.js?v=20261026" defer></script>
+</head>
+<body class="app">
+  <a class="skip" href="#main">Langkau ke kandungan</a>
+
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 4v15m0 0 5.5-5.5M12 19l-5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="8" y="8" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24">
+      <path d="m14.5 5.5 4 4M4 20l4.2-1 10.6-10.6a2.1 2.1 0 0 0-3-3L5.2 16 4 20Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-link" viewBox="0 0 24 24">
+      <path d="M10 14a4 4 0 0 0 5.7 0l2.4-2.4a4 4 0 0 0-5.7-5.7L11 7.3M14 10a4 4 0 0 0-5.7 0l-2.4 2.4a4 4 0 0 0 5.7 5.7l1.4-1.4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24">
+      <path d="M9 7v10M15 7v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <path d="M8 6.8v10.4L17 12 8 6.8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24">
+      <path d="M4.5 7h15M9.5 7V4.8h5V7M7 7l.8 12h8.4L17 7M10 11v4M14 11v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24">
+      <path d="M3 13h4l2.2-5 3.5 9 2.3-6H21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="JohorStudio Redirect — halaman utama">
+        <img src="/assets/logo-dark.png" alt="JohorStudio.com" width="800" height="280">
+      </a>
+      <nav class="top-nav" aria-label="Navigasi utama">
+        <a href="/" aria-current="page">Pautan</a>
+        <a href="https://johorstudio.com" target="_blank" rel="noopener">johorstudio.com <svg class="icon icon-xs"><use href="#i-arrow-up-right"></use></svg></a>
+      </nav>
+      <div class="header-account">
+        <span class="access-state"><span class="access-dot" aria-hidden="true"></span> Access</span>
+        <span class="account-email" id="account-email">Memuatkan…</span>
+        <a class="logout-link" id="logout-link" href="https://johorstudio.com" hidden>Log keluar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Alat dalaman · JohorStudio</span>
+        <h1 id="page-title">Pautan pendek.<br><span class="highlight">Kesan besar.</span></h1>
+        <p class="lead">Satu subdomain <strong>johorstudio.com</strong> untuk setiap destinasi. Cipta, kongsi dan lihat prestasinya di satu tempat.</p>
+        <div class="hero-meta">
+          <span class="live-pill"><span class="access-dot" aria-hidden="true"></span> Dilindungi Cloudflare Access</span>
+          <span class="hero-domain">re.johorstudio.com</span>
+        </div>
+      </div>
+
+      <aside class="route-card" aria-label="Contoh pemetaan pautan">
+        <div class="route-top">
+          <span class="route-label">Masuk</span>
+          <span class="route-badge">Subdomain</span>
+        </div>
+        <p class="route-url">telegram.johorstudio.com</p>
+        <div class="route-divider" aria-hidden="true">
+          <span></span>
+          <svg class="icon"><use href="#i-arrow-down"></use></svg>
+          <span></span>
+        </div>
+        <div class="route-top">
+          <span class="route-label">Keluar</span>
+          <span class="route-badge">Destinasi</span>
+        </div>
+        <p class="route-destination">t.me/johrostudio</p>
+        <div class="route-foot">
+          <span class="route-live"><span></span> Aktif</span>
+          <span id="route-clicks">Contoh pautan</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stat-strip" id="overview" aria-label="Ringkasan pautan">
+      <div class="stat">
+        <span class="stat-label">Pautan aktif</span>
+        <strong class="stat-value" id="stat-active">–</strong>
+        <span class="stat-note" id="stat-links-note">Daripada – pautan</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Klik 7 hari</span>
+        <strong class="stat-value" id="stat-clicks7d">–</strong>
+        <span class="stat-note">Mengikut waktu Malaysia</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Jumlah klik</span>
+        <strong class="stat-value" id="stat-clicks">–</strong>
+        <span class="stat-note">Sejak pautan dicipta</span>
+      </div>
+      <div class="stat stat-status">
+        <span class="stat-label">Status sistem</span>
+        <strong class="stat-value stat-value-sm"><span class="access-dot" aria-hidden="true"></span> Dalam talian</strong>
+        <span class="stat-note">TrueNAS · SQLite</span>
+      </div>
+    </section>
+
+    <div class="workspace">
+      <section class="panel links-panel" aria-labelledby="links-title">
+        <div class="panel-head">
+          <div>
+            <span class="eyebrow">Koleksi</span>
+            <h2 id="links-title">Semua pautan</h2>
+          </div>
+          <span class="count-pill" id="visible-count">– pautan</span>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-field">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+            <span class="sr-only">Cari pautan</span>
+            <input id="search-input" type="search" placeholder="Cari subdomain atau destinasi" autocomplete="off" spellcheck="false">
+          </label>
+          <div class="filter-group" role="group" aria-label="Tapis pautan">
+            <button class="filter is-active" type="button" data-status="all" aria-pressed="true">Semua</button>
+            <button class="filter" type="button" data-status="active" aria-pressed="false">Aktif</button>
+            <button class="filter" type="button" data-status="paused" aria-pressed="false">Dijeda</button>
+          </div>
+        </div>
+
+        <div class="link-list" id="links-list" aria-live="polite" aria-busy="true">
+          <div class="link-skeleton" aria-hidden="true"></div>
+          <div class="link-skeleton" aria-hidden="true"></div>
+          <div class="link-skeleton" aria-hidden="true"></div>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon"><svg class="icon"><use href="#i-link"></use></svg></span>
+          <h3 id="empty-title">Belum ada pautan</h3>
+          <p id="empty-copy">Cipta pautan pertama anda di sebelah kanan.</p>
+          <button class="btn btn-line" type="button" id="empty-reset" hidden>Kosongkan carian</button>
+        </div>
+      </section>
+
+      <aside class="create-panel" aria-labelledby="create-title">
+        <div class="create-head">
+          <span class="eyebrow eyebrow-light">Pautan baharu</span>
+          <h2 id="create-title">Cipta pautan</h2>
+          <p>Terus aktif sebaik disimpan. Boleh diedit atau dijeda bila-bila masa.</p>
+        </div>
+
+        <form id="create-form" autocomplete="off" novalidate>
+          <div class="field">
+            <label for="create-title-input">Nama pautan <span class="optional">Pilihan</span></label>
+            <input id="create-title-input" name="title" type="text" maxlength="120" placeholder="Telegram JohorStudio">
+          </div>
+
+          <div class="field">
+            <label for="create-slug">Subdomain</label>
+            <div class="domain-field">
+              <input id="create-slug" name="slug" type="text" inputmode="url" maxlength="63" placeholder="telegram" autocapitalize="none" spellcheck="false" required>
+              <span class="domain-suffix" data-base-domain>.johorstudio.com</span>
+            </div>
+            <span class="field-hint">Huruf kecil, nombor dan sengkang sahaja.</span>
+          </div>
+
+          <div class="field">
+            <label for="create-target">Destinasi</label>
+            <input id="create-target" name="targetUrl" type="text" inputmode="url" maxlength="2048" placeholder="https://t.me/johrostudio" autocapitalize="none" spellcheck="false" required>
+          </div>
+
+          <div class="link-preview" id="link-preview" aria-live="polite">
+            <span class="preview-label">Pratonton</span>
+            <div class="preview-route">
+              <span class="preview-short" id="preview-short">pautan.johorstudio.com</span>
+              <svg class="icon icon-xs" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+            </div>
+            <span class="preview-target" id="preview-target">Destinasi anda akan muncul di sini</span>
+          </div>
+
+          <div class="form-error" id="create-error" role="alert" hidden></div>
+
+          <button class="btn btn-teal btn-block" type="submit" id="create-submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
+            <span>Cipta pautan</span>
+          </button>
+          <p class="form-note">Data disimpan pada TrueNAS anda. Tiada perkhidmatan pihak ketiga.</p>
+        </form>
+      </aside>
+    </div>
+
+    <section class="activity-grid" aria-label="Prestasi pautan">
+      <div class="panel chart-panel" aria-labelledby="chart-title">
+        <div class="panel-head">
+          <div>
+            <span class="eyebrow">Prestasi</span>
+            <h2 id="chart-title">Klik 7 hari</h2>
+          </div>
+          <span class="chart-total" id="chart-total">– <span>klik</span></span>
+        </div>
+        <div class="chart" id="chart" role="img" aria-label="Carta klik tujuh hari terakhir">
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+          <div class="chart-placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="chart-legend">
+          <span><span class="legend-dot"></span> Klik melalui pautan pendek</span>
+          <span>Retensi 90 hari</span>
+        </div>
+      </div>
+
+      <div class="panel activity-panel" aria-labelledby="activity-title">
+        <div class="panel-head">
+          <div>
+            <span class="eyebrow">Langsung</span>
+            <h2 id="activity-title">Aktiviti terkini</h2>
+          </div>
+          <span class="live-pill live-pill-small"><span class="access-dot" aria-hidden="true"></span> Langsung</span>
+        </div>
+        <ul class="recent-list" id="recent-list" aria-live="polite">
+          <li class="recent-empty">Memuatkan aktiviti…</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/logo-dark.png" alt="JohorStudio.com" width="800" height="280">
+        <p>Pautan ringkas untuk jenama JohorStudio.</p>
+      </div>
+      <div class="footer-meta">
+        <span>Dijalankan di TrueNAS</span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span>Cloudflare Access</span>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <span>© 2026 JohorStudio</span>
+      </div>
+      <a class="footer-link" href="https://johorstudio.com" target="_blank" rel="noopener">johorstudio.com <svg class="icon icon-xs" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></a>
+    </div>
+  </footer>
+
+  <template id="link-template">
+    <article class="link-card">
+      <span class="link-status-dot" aria-hidden="true"></span>
+      <div class="link-main">
+        <div class="link-title-row">
+          <a class="link-short" target="_blank" rel="noopener">
+            <span class="link-slug"></span><span class="link-domain">.johorstudio.com</span>
+            <svg class="icon icon-xs" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+          </a>
+          <span class="status-badge"></span>
+        </div>
+        <p class="link-target"></p>
+        <div class="link-meta">
+          <span class="link-name"></span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="link-clicks"></span>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="link-last"></span>
+        </div>
+      </div>
+      <div class="link-actions">
+        <button class="icon-btn" type="button" data-action="copy" aria-label="Salin pautan">
+          <svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>
+          <span class="btn-tip">Salin</span>
+        </button>
+        <button class="icon-btn" type="button" data-action="edit" aria-label="Edit pautan">
+          <svg class="icon" aria-hidden="true"><use href="#i-pencil"></use></svg>
+          <span class="btn-tip">Edit</span>
+        </button>
+      </div>
+    </article>
+  </template>
+
+  <dialog class="modal" id="edit-dialog" aria-labelledby="edit-title">
+    <form id="edit-form" autocomplete="off" novalidate>
+      <div class="modal-head">
+        <div>
+          <span class="eyebrow">Urus pautan</span>
+          <h2 id="edit-title">Edit pautan</h2>
+        </div>
+        <button class="icon-btn modal-close" type="button" id="edit-close" aria-label="Tutup">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+
+      <input type="hidden" id="edit-id">
+      <div class="field">
+        <label for="edit-title-input">Nama pautan <span class="optional">Pilihan</span></label>
+        <input id="edit-title-input" name="title" type="text" maxlength="120" placeholder="Telegram JohorStudio">
+      </div>
+      <div class="field">
+        <label for="edit-slug">Subdomain</label>
+        <div class="domain-field">
+          <input id="edit-slug" name="slug" type="text" maxlength="63" autocapitalize="none" spellcheck="false" required>
+          <span class="domain-suffix" data-base-domain>.johorstudio.com</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="edit-target">Destinasi</label>
+        <input id="edit-target" name="targetUrl" type="text" maxlength="2048" autocapitalize="none" spellcheck="false" required>
+      </div>
+      <label class="toggle-row" for="edit-active">
+        <span>
+          <strong>Pautan aktif</strong>
+          <small>Matikan untuk menjeda redirect tanpa memadam data.</small>
+        </span>
+        <input id="edit-active" type="checkbox">
+        <span class="toggle" aria-hidden="true"><span></span></span>
+      </label>
+
+      <div class="form-error form-error-light" id="edit-error" role="alert" hidden></div>
+
+      <div class="modal-actions">
+        <button class="btn btn-danger-ghost" type="button" id="edit-delete">
+          <svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg>
+          Padam
+        </button>
+        <div class="modal-actions-right">
+          <button class="btn btn-line" type="button" id="edit-cancel">Batal</button>
+          <button class="btn btn-primary" type="submit" id="edit-submit">Simpan perubahan</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span class="toast-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+    <span id="toast-message"></span>
+  </div>
+</body>
+</html>

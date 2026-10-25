@@ -1,0 +1,15 @@
+# secrets and runtime data
+.env
+.env.*
+!.env.example
+tunnel.env
+.cloudflare-*
+data/
+deploy/CLOUDFLARE.md
+
+# local deployment helpers (contain account/resource ids)
+tools/
+
+# tooling / OS
+node_modules/
+.DS_Store

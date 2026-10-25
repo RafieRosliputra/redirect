@@ -1,0 +1,46 @@
+# TrueNAS SCALE — Custom App "redirect"
+# Code: /mnt/ssd/redirect/app   Data: /mnt/ssd/redirect/data
+# Env:  /mnt/ssd/redirect/.env  Tunnel token: /mnt/ssd/redirect/tunnel.env
+services:
+  redirect:
+    image: node:24-alpine
+    restart: unless-stopped
+    init: true
+    user: "950:950"
+    working_dir: /app
+    command: ["node", "server.mjs"]
+    env_file:
+      - /mnt/ssd/redirect/.env
+    environment:
+      NODE_ENV: production
+      PORT: "8080"
+    ports:
+      - "18123:8080"
+    volumes:
+      - /mnt/ssd/redirect/app:/app:ro
+      - /mnt/ssd/redirect/data:/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run"]
+    env_file:
+      - /mnt/ssd/redirect/tunnel.env
+    depends_on:
+      redirect:
+        condition: service_healthy
+    security_opt:
+      - no-new-privileges:true
